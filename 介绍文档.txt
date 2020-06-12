@@ -7,6 +7,7 @@ $secret = "secret";     //修改成你的
 $path = 'C:/Program Files/Git/bin'; //你安装的路径
 
 $dir = '上传的项目存放的路径';      //项目下载到那个路径最好是绝对路径例如：C:\www\xxx
+注意：最好是反斜杠
 
 echo shell_exec("cd {$path} && git clone https://github.com/sdxyxjgg/fwqtest.git {$dir}");
 https://github.com/sdxyxjgg/fwqtest.git     //改成你自己的
