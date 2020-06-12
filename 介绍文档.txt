@@ -1,13 +1,14 @@
 首先先在windows服务器安装github
 
-然后把window同步.php复制到服务器路径下
+然后把window同步代码.php复制到服务器路径下
 
 $secret = "secret";     //修改成你的
 
 $path = 'C:/Program Files/Git/bin'; //你安装的路径
 
+$dir = '上传的项目存放的路径';      //项目下载到那个路径最好是绝对路径例如：C:\www\xxx
 
-echo shell_exec("cd {$path} && git clone https://github.com/sdxyxjgg/fwqtest.git 路径");
+echo shell_exec("cd {$path} && git clone https://github.com/sdxyxjgg/fwqtest.git {$dir}");
 https://github.com/sdxyxjgg/fwqtest.git     //改成你自己的
-路径        //项目下载到那个路径最好是绝对路径例如：C:\www\xxx
+$dir        //项目下载到那个路径最好是绝对路径例如：C:\www\xxx
 注意：这个绝对路径最好在服务器项目下，同步后就可以直接访问
